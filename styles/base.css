@@ -1,0 +1,125 @@
+body {
+    background-color: #DBC2A6;
+    display: grid;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+}
+
+header {
+    background-color: #414A37;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#course-title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.navbar {
+    background-color: #99744A;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main h1 {
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: #414A37;
+    font-weight: 200;
+}
+
+section h2 {
+    background-color: #99744a;
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+    height: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+section {
+    background-color: #414A37;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 3);
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card a:hover {
+    color: #DBC2A6;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.about-flex p {
+    flex: 1;
+}
+
+.country-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #99744A;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
