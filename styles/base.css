@@ -22,7 +22,7 @@ header {
 }
 
 .navbar {
-    background-color: #99744A;
+    background-color: #414A37;
     padding: 10px 0;
 }
 
@@ -57,8 +57,9 @@ main {
 main h1 {
     grid-column: 1/-1;
     text-align: center;
-    background-color: #414A37;
-    font-weight: 200;
+    background-color: #99744a;
+    font-weight: 500;
+    color: #000000;
 }
 
 section h2 {
@@ -79,6 +80,10 @@ section {
 h3 {
     text-align: center;
     text-decoration: underline;
+}
+
+.card li {
+    margin-bottom: 10px;
 }
 
 .card a {
@@ -114,7 +119,7 @@ img {
 }
 
 footer {
-    background-color: #99744A;
+    background-color: #414A37;
     text-align: center;
     color: #ffffff;
     padding: 10px;
