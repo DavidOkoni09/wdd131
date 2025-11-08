@@ -1,0 +1,46 @@
+@media screen and (max-width: 500px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    #menuButton {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100px;
+        margin: 0;
+        padding: 1rem 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
