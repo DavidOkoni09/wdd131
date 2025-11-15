@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #0a6b0a;
+}
+
+header {
+    background-color: #0a6b0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    border-bottom: 8px solid white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    position: fixed;
+    padding: 20px;
+    border: 2px solid #0a6b0a;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.72);
+}
+
+.data-section {
+    top: 100px;
+    left: 20px;
+    width: 180px;
+    height: auto;
+}
+
+.weather-section {
+    right: 10px;
+    bottom: 35px;
+    width: 150px;
+    height: auto;
+}
+
+section h2 {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    color: #056005;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.weather-section h2::after {
+    content: " ⛅";
+    font-size: 1.05rem;
+    margin-left: 6px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.weather-icon-mobile {
+    display: none;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    padding: 5px 0;
+}
+
+footer {
+    background-color: #0a6b0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}

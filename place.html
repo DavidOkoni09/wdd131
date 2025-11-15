@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Weather</title>
+    <meta name="description" content="Get the current weather of any country |WDD 131 - Dynamic Web Fundamentals, Agrinya Owokoni David">
+    <meta name="author" content="Agrinya Owokoni David">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Nigeria
+        </h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero.webp" media="(min-width: 500px)">
+            <img src="images/hero.webp" alt="Hero Image" width="1280" height="853">
+        </picture>
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area: </strong>923,768 km²</li>
+                <li><strong>Population: </strong>232,700,000</li>
+                <li><strong>Capital: </strong>Abuja</li>
+                <li><strong>Languages: </strong>English, Yoruba, Hausa, Igbo, Yala, Efik etc</li>
+                <li><strong>Currency: </strong>Naira</li>
+                <li><strong>Time Zone: </strong>GMT+0</li>
+                <li><strong>Calling Code: </strong>+234</li>
+            </ul>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <img src="images/cloud.svg" alt="Weather icon" class="weather-icon-mobile">
+            <ul>
+                <li><strong>Temperature: </strong><span id="temperature">12</span> °C</li>
+                <li><strong>Humidity: </strong><span id="humidity">Loading...</span> %</li>
+                <li><strong>Wind Speed: </strong><span id="wind-speed">15</span> Kmh</li>
+                <li><strong>Conditions: </strong><span id="description">Chilly</span></li>
+                <li><strong>Wind Chill:</strong><span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+            <p>©<span id="currentyear"></span> ❤️ Agrinya Owokoni ❤️ Nigeria</p>
+            <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
