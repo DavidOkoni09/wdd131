@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0a6b0a;
+    --primary-color: #007A3D;
     --secondary-color: #056005;
     --background-color: #ffffff;
     --overlay-background: rgba(255, 255, 255, 0.72);
@@ -49,6 +49,7 @@ section {
     border-radius: var(--border-radius);
     font-size: 0.8rem;
     background-color: var(--overlay-background);
+    font-weight: 700;
 }
 
 .data-section {
@@ -106,6 +107,7 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
+    font-weight: 700;
 }
 
 footer p {

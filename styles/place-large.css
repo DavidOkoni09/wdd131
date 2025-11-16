@@ -1,7 +1,7 @@
 /* Wide Screen Layout */
 @media screen and (max-width: 500px) {
     :root {
-        --primary-color: #0a6b0a;
+        --primary-color:#007A3D;
         --secondary-color: #056005;
         --background-color: #ffffff;
         --overlay-background: rgba(255, 255, 255, 0.72);
