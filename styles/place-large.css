@@ -1,13 +1,19 @@
 /* Wide Screen Layout */
 @media screen and (max-width: 500px) {
+    :root {
+        --primary-color: #0a6b0a;
+        --secondary-color: #056005;
+        --background-color: #ffffff;
+        --overlay-background: rgba(255, 255, 255, 0.72);
+        --border-radius: 10px;
+    }
 
-    /* Remove mobile fixed layout */
     section {
         position: static;
         width: auto;
         height: auto;
         margin: 0 auto;
-        background-color: rgb(255, 255, 255);
+        background-color: var(--background-color);
         padding: 20px;
         font-size: 1rem;
         border: none;
@@ -39,7 +45,7 @@
         height: 420px;
         object-fit: cover;
         border-radius: 0;
-        border-bottom: 5px solid #0a6b0a;
+        border-bottom: 5px solid var(--primary-color);
     }
 
     .data-section {
@@ -54,7 +60,6 @@
         text-align: center;
     }
 
-    /* Improve headings for desktop */
     section h2 {
         position: static;
         background: none;
