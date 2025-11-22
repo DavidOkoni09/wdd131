@@ -81,7 +81,7 @@ const temples = [
         dedicated: "1980, October, 27",
         area: 53997,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340.jpg"  
+            "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340.jpg"
     },
     {
         templeName: "Bern Switzerland",
