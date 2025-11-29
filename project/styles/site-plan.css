@@ -15,17 +15,23 @@ body {
 
 header,
 footer {
-    background: var(--primary);
+    background: var(--text);
     color: white;
     padding: 1rem;
     text-align: center;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     color: #fff;
+}
+
+h2 {
+    color: var(--text);
+}
+
+h3 {
+    color: var(--text);
 }
 
 section {
