@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Form</title>
-    <meta name="description" content="Form for submitting reviews">
+    <meta name="description" content="Form for submitting reviews on company products | WDD 131 - Agrinya Owokoni David">
     <meta name="author" content="Agrinya Owokoni David">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
@@ -16,7 +17,6 @@
     <main>
         <h2>Product Review Form</h2>
         <form action="review.html" method="get" class="pf1">
-            <input type="hidden" name="submitted" value="true">
                 
             <label for="product"> <h3>Product Name</h3>
                 <select name="product" id="product" required>
@@ -26,20 +26,30 @@
 
             <h3>Overall Rating</h3>
             <div class="rating">
-                <input type="radio" id="rate1" name="rating" value="1" required>
-                <label for="rate1">☆</label>
-
-                <input type="radio" id="rate2" name="rating" value="2">
-                <label for="rate2">☆☆</label>
-
-                <input type="radio" id="rate3" name="rating" value="3">
-                <label for="rate3">☆☆☆</label>
-
-                <input type="radio" id="rate4" name="rating" value="4">
-                <label for="rate4">☆☆☆☆</label>
-
-                <input type="radio" id="rate5" name="rating" value="5">
-                <label for="rate5">☆☆☆☆☆</label>
+                <div class="rate-option">
+                    <label for="rate1">☆</label>
+                    <input type="radio" id="rate1" name="rating" value="1" required>
+                </div>
+            
+                <div class="rate-option">
+                    <label for="rate2">☆☆</label>
+                    <input type="radio" id="rate2" name="rating" value="2">
+                </div>
+            
+                <div class="rate-option">
+                    <label for="rate3">☆☆☆</label>
+                    <input type="radio" id="rate3" name="rating" value="3">
+                </div>
+            
+                <div class="rate-option">
+                    <label for="rate4">☆☆☆☆</label>
+                    <input type="radio" id="rate4" name="rating" value="4">
+                </div>
+            
+                <div class="rate-option">
+                    <label for="rate5">☆☆☆☆☆</label>
+                    <input type="radio" id="rate5" name="rating" value="5">
+                </div>
             </div>
 
             <h3>Date of Installation</h3>
@@ -47,12 +57,31 @@
             
             <h3>Useful Features</h3>
             
-            <input type="checkbox" id="feature1" name="features" value="Durability">
-            <label for="feature1">Durability</label>
-            <input type="checkbox" id="feature2" name="features" value="Design">
-            <label for="feature2">Design</label>
-            <input type="checkbox" id="feature3" name="features" value="Performance">
-            <label for="feature3">Performance</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature1" name="features" value="Durability">
+                <label for="feature1">Durability</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature2" name="features" value="Design">
+                <label for="feature2">Design</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature3" name="features" value="Performance">
+                <label for="feature3">Performance</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature4" name="features" value="Ease of Use">
+                <label for="feature4">Ease of Use</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature5" name="features" value="Customer Support">
+                <label for="feature5">Customer Support</label>
+            </div>
+
 
             
             <label for="review"><h3>Written Review (Optional)</h3></label>

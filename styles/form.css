@@ -65,22 +65,40 @@ form {
     box-sizing: border-box;
 }
 
-.pf1 input[type="checkbox"] {
-    margin-right: 8px;
-    vertical-align: middle;
-    transform: scale(1.5);
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    gap: 8px;
 }
 
-.pf1 input[type="radio"] {
-    display: flex;
-    transform: scale(2);
-    align-items: center;
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
 }
 
 .rating {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rate-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rate-option label {
+    font-size: 25px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.rate-option input[type="radio"] {
+    margin-top: 5px;
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 .pf1 input[type="submit"] {

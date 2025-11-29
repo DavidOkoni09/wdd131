@@ -7,6 +7,7 @@
     <meta name="description" content="Review Submission Page">
     <meta name="author" content="Agrinya Owokoni David">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-small.css">
 </head>
 <body>
     <header>
@@ -23,28 +24,18 @@
     </footer>
 
     <script>
-        // Parse the URL parameters
-        const params = new URLSearchParams(window.location.search);
-        
-        // Check if the form was actually submitted
-        if (params.has("submitted")) {
-        
-            // Get the current review count from localStorage
-            let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
-            
-            // Increment the counter
-            reviewCount++;
-            
-            // Save it back to localStorage
-            localStorage.setItem("reviewCount", reviewCount);
-            
-            // Display the updated count
-            document.querySelector("#reviewCounter").textContent = reviewCount;
-            } else {
-            // Display the existing count without incrementing
-            document.querySelector("#reviewCounter").textContent =
-            localStorage.getItem("reviewCount") || 0;
-            }
+        // Get the current review count from localStorage
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+
+        // Increase by one each time review.html loads
+        reviewCount++;
+
+        // Save it back to localStorage
+        localStorage.setItem("reviewCount", reviewCount);
+
+        // Display it on the page (optional)
+        document.querySelector("#reviewCounter").textContent = reviewCount;
+
         document.getElementById("year").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
     </script>

@@ -1,0 +1,84 @@
+@media  screen and (max-width: 500px) {    
+    :root {
+        --primary: #4A90E2;
+        --secondary: #6C7A89;
+        --background: #F5F7FA;
+        --text: #2C3E50;
+        --accent: #F5A623;
+    }    
+
+    /* Make main content full width on phones */
+    main {
+        max-width: 95%;
+        padding: 0 10px 80px;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+
+    /* Form container */
+    form.pf1 {
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Input fields */
+    .pf1 input[type="text"],
+    .pf1 select,
+    .pf1 input[type="date"],
+    .pf1 textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Checkboxes: bigger for fingers */
+    .pf1 input[type="checkbox"] {
+        transform: scale(1.6);
+        margin-right: 12px;
+    }
+
+    /* Radio buttons: bigger and stacked */
+    .pf1 input[type="radio"] {
+        transform: scale(1.8);
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        /* stack stars vertically on small screens */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .rate-option {
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Submit button */
+    .pf1 input[type="submit"] {
+        padding: 1rem;
+        font-size: 1.1rem;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* Footer: add extra space */
+    footer {
+        font-size: 0.9rem;
+        padding: 15px 5px;
+    }
+}
