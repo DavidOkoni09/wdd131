@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <meta name="description" content="Review Submission Page">
+    <meta name="author" content="Agrinya Owokoni David">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <h2>Thank You for Your Review!</h2>
+        <p>Your review has been successfully submitted.</p>
+        <p>Total Reviews Submitted: <span id="reviewCounter">0</span></p>
+    </main>
+    <footer>
+        <p>©<span id="year"></span>❤️ Agrinya Owokoni David ❤️ Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Parse the URL parameters
+        const params = new URLSearchParams(window.location.search);
+        
+        // Check if the form was actually submitted
+        if (params.has("submitted")) {
+        
+            // Get the current review count from localStorage
+            let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+            
+            // Increment the counter
+            reviewCount++;
+            
+            // Save it back to localStorage
+            localStorage.setItem("reviewCount", reviewCount);
+            
+            // Display the updated count
+            document.querySelector("#reviewCounter").textContent = reviewCount;
+            } else {
+            // Display the existing count without incrementing
+            document.querySelector("#reviewCounter").textContent =
+            localStorage.getItem("reviewCount") || 0;
+            }
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
