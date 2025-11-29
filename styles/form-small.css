@@ -13,6 +13,10 @@
         padding: 0 10px 80px;
     }
 
+    fieldset {
+        max-width: 400px;
+    }
+
     /* Headings */
     h1 {
         font-size: 1.6rem;
