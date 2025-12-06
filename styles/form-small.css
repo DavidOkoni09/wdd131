@@ -1,4 +1,4 @@
-@@media  screen and (max-width: 500px) {    
+@@media  screen and (max-width: 450px) {    
     :root {
         --primary: #4A90E2;
         --secondary: #6C7A89;
@@ -12,6 +12,11 @@
         max-width: 95%;
         padding: 0 10px 80px 10px;
         margin-right: 25px;
+    }
+
+    header {
+        max-width: 100%;
+        
     }
 
     fieldset {
