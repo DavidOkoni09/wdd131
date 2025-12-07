@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact page of the proofreading webpage, send contact info and request for quotes | WDD 131">
+    <meta name="author" content="Agrinya Owokoni David">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@400;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/polish.css">
+    <link rel="stylesheet" href="styles/polish-small.css">
+    <script src="scripts/polish.js" defer></script>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.webp" alt="Logo image">
+            <h1>Polish & Proof✒️</h1>
+        </div>
+        <nav class="navbar">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Pricing & Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button id="menuButton">☰</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="contact-card">
+            <div>
+                <h2>Contact</h2>
+                <p><strong>Phone Number:</strong> 09166648457</p>
+                <p><strong></strong></p>
+                <p><strong>Email address:</strong> example@gmail.com</p>
+                <p><strong>Contact us for quotes, questions or editing requests.</strong></p>
+            </div>
+            <div>
+                <h2>About Us</h2>
+                <h3>Our Mission: Clarity, Credibility, and Confidence</h3>
+                <p>We believe that your ideas deserve to be judged on their merit, not undermined by avoidable errors.
+                    At <strong>Polish & Proof✒️</strong>, our mission is simple: to transform your text into polished, professional, and powerful
+                    communication.
+
+                    We are dedicated to removing the barriers between what you mean to say and what your audience
+                    actually
+                    reads.
+                </p>
+            </div>
+        </section>
+
+        <form method="get" action="submit-request.html" class="pform">
+            <h2>Proofreading & Editing Service Request</h2>
+        
+            <fieldset class="form-section">
+                <legend>Contact Information</legend>
+        
+                <div class="form-group">
+                    <label for="fname">First Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="fname" name="fname" placeholder="John" required>                   
+                </div>
+        
+                <div class="form-group">
+                    <label for="lname">Last Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., +234 812 345 6789">
+                </div>
+            </fieldset>
+        
+            <fieldset class="form-section">
+                <legend>Document & Service Details</legend>
+        
+                <div class="form-group">
+                    <label for="document-type">Document Type <span aria-hidden="true">*</span></label>
+                    <select id="document-type" name="document-type" required>
+                        <option value="" disabled selected>— Please Select Document Type —</option>
+                        <option value="essay">Essay / Coursework</option>
+                        <option value="cv">CV / Résumé</option>
+                        <option value="research">Research Paper / Thesis</option>
+                        <option value="application">Application Letter / SOP</option>
+                        <option value="novel">Fiction / Novel Manuscript</option>
+                        <option value="business">Business Document / Report</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+        
+                <div class="form-group service-options">
+                    <strong id="service-legend">Service Needed <span aria-hidden="true">*</span></strong>
+                    <p class="instruction-text" aria-describedby="service-legend">Please select the level of editing required:</p>
+                
+                    <div class="radio-group-container">
+                
+                        <div class="radio-option">
+                            <input type="radio" id="proofreading" name="service-needed" value="proofreading" required>
+                            <label for="proofreading">
+                                <strong>Proofreading</strong>
+                        </div>
+                
+                        <div class="radio-option">
+                            <input type="radio" id="copyediting" name="service-needed" value="copyediting" required>
+                            <label for="copyediting">
+                                <strong>Copyediting</strong>
+                            </label>
+                        </div>
+                
+                        <div class="radio-option">
+                            <input type="radio" id="heavy-edit" name="service-needed" value="heavy-edit" required>
+                            <label for="heavy-edit">
+                                <strong>Developmental/Heavy Editing</strong>
+                            </label>
+                        </div>
+                
+                        <div class="radio-option">
+                            <input type="radio" id="formatting" name="service-needed" value="formatting" required>
+                            <label for="formatting">
+                                <strong>Formatting</strong>
+                            </label>
+                        </div>
+                
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="word-count">Estimated Word Count <span aria-hidden="true">*</span></label>
+                    <input type="number" id="word-count" name="word-count" min="100" placeholder="e.g., 2500" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="deadline">Required Deadline <span aria-hidden="true">*</span></label>
+                    <input type="date" id="deadline" name="deadline" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="document-upload">Optional Document Upload (e.g., DOCX, PDF)</label>
+                    <input type="file" id="document-upload" name="document-upload" accept=".doc,.docx,.pdf,.txt">
+                    <small>Max file size: 5MB</small>
+                </div>
+            </fieldset>
+        
+            <fieldset class="form-section">
+                <legend>Your Message</legend>
+        
+                <div class="form-group">
+                    <label for="description">Project Description / Special Instructions</label>
+                    <textarea id="description" name="description" rows="5"
+                        placeholder="Tell us about your document, your target audience, and any specific concerns or style guides (e.g., APA 7th Edition) we should follow."></textarea>
+                </div>
+        
+                <div class="form-group submit-group">
+                    <button type="submit" class="submit-button">Request Free Quote</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="year"></span>❤️ Agrinya Owokoni David ❤️ Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

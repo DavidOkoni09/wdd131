@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A submit request page to inform a client that their request has been succesfully submitted | WDD 131">
+    <meta name="author" content="Agrinya Owokoni David">
+    <link rel="stylesheet" href="styles/polish.css">
+    <link rel="stylesheet" href="styles/polish-small.css">
+    <script src="scripts/polish.js" defer></script>
+    <title>Request Page</title>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.webp" alt="Logo image">
+            <h1>Polish & Proof✒️</h1>
+        </div>
+        <nav class="navbar">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Pricing & Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button id="menuButton">☰</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Thank You for Your Request!</h2>
+        <p style="font-size: 20px;">Congratulations your request has been successfully submitted.</p>
+        <p style="font-size: 20px;">Total Requests Sent: <span id="reviewCounter">0</span></p>
+    </main>
+    <footer>
+        <p>©<span id="year"></span>❤️ Agrinya Owokoni David ❤️ Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+
+        reviewCount++;
+
+        localStorage.setItem("reviewCount", reviewCount);
+
+        document.querySelector("#reviewCounter").textContent = reviewCount;
+    </script>
+</body>
+</html>

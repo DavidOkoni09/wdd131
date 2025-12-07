@@ -1,0 +1,207 @@
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .brand {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        gap: 0;
+        padding: 0;
+        
+    }
+
+    .navbar ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar ul.open li {
+        width: 100%;
+    }
+
+    .navbar li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+    #menuButton {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: none;
+        color: white;
+        padding: 8px 12px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-top: 10px;
+        background-color: #2C3E50;
+    }
+
+
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .hero-section img {
+        height: auto;
+        max-height: 50vh;
+        margin-bottom: 20px;
+    }
+
+    .cta p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cta button {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+
+
+    main {
+        padding: 15px;
+    }
+
+    #service-container {
+        grid-template-columns: 1fr;
+    }
+
+    #testimonial-container {
+        flex-direction: column;
+    }
+
+    .hiw,
+    section {
+        padding: 15px 0;
+    }
+
+    .service {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .service h2 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .before-after {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    main>h2+table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        display: block;
+        max-width: 100%;
+        margin-left: -15px;
+        margin-right: 15px;
+        box-sizing: border-box;
+    }
+
+    table {
+        min-width: 450px;
+        display: table;
+        width: auto;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+        font-size: 0.7em;
+        white-space: nowrap;
+    }
+
+    details summary {
+        font-size: 0.95rem;
+    }
+
+    details ul {
+        font-size: 0.9em;
+    }
+
+    .contact-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contact-card div {
+        padding: 15px;
+    }
+
+    .pform {
+        padding: 20px;
+    }
+
+    .pform input:not([type="radio"]),
+    .pform select,
+    .pform textarea {
+        padding: 10px;
+    }
+
+    .radio-option {
+        padding: 10px;
+    }
+
+    .radio-option label {
+        font-size: 0.95rem;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .submit-button {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    footer {
+        padding: 15px 20px;
+    }
+}
