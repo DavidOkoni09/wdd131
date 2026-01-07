@@ -21,6 +21,12 @@ header {
     margin: 10px auto;
 }
 
+.hamburger {
+    display: none;
+}
+
+
+
 .navbar {
     background-color: #414A37;
     padding: 10px 0;

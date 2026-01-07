@@ -1,0 +1,154 @@
+@media screen and (max-width: 500px) {
+    header {
+            background-color: #414A37;
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #course-title {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 10px auto;
+        }
+
+        .hamburger {
+            display: block;
+            background: none;
+            border: none;
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .hamburger::after {
+            content: "\2630";
+        }
+
+        .hamburger.show::after {
+            content: "\00D7";
+        }
+
+        .navbar {
+            background-color: #414A37;
+            padding: 10px;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .navbar.show {
+            display: block;
+        }
+
+        .navbar a {
+            display: block;
+            padding: .8rem 10px;
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: solid 1px #ddd;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a:hover {
+            text-decoration: overline;
+            background-color: gray;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: white;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        main h1 {
+            grid-column: 1/-1;
+            text-align: center;
+            background-color: #99744a;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        section h2 {
+            background-color: #99744a;
+            margin-top: 0;
+            border-radius: 10px 10px 0 0;
+            height: 50px;
+            text-align: center;
+            color: #000000;
+        }
+
+        section {
+            background-color: #414A37;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 3);
+        }
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .card a:hover {
+            color: #DBC2A6;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        .about-flex {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .about-flex p {
+            flex: 1;
+        }
+
+        .country-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #414A37;
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+}
