@@ -8,7 +8,7 @@
 
         #course-title {
             display: block;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: bold;
             margin: 10px auto;
         }
@@ -18,7 +18,7 @@
             background: none;
             border: none;
             color: rgb(255, 255, 255);
-            font-size: 1.5rem;
+            font-size: 1.9rem;
             cursor: pointer;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
